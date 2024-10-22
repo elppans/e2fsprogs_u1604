@@ -20,3 +20,10 @@ Para verificar a versão atual do e2fsprogs em seu sistema, utilize o seguinte c
 ```bash
 dpkg -l e2fsprogs
 ```
+___
+
+## Usando para a verificação do sistema de arquivos ext4
+
+```bash
+e2fsck -f -y -v -C 0 /dev/sda2
+```
